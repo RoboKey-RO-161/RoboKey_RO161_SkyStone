@@ -112,22 +112,18 @@ public class AlinDrive extends LinearOpMode {
             if(brat11 > 0.0) {
                 robot.motorBratStanga.setTargetPosition(-9109);
                 robot.motorBratDreapta.setTargetPosition(-9115);
-                telemetry.addData("SUS","OK");
             }
             if(brat11 < 0.0)
             {
                 robot.motorBratDreapta.setTargetPosition(start2);
                 robot.motorBratStanga.setTargetPosition(start1);
-                telemetry.addData("JOS","OK");
             }
             if(brat11 == 0.0)
             {
-                telemetry.addData("MIJLOC","OK");
                 robot.motorBratStanga.setTargetPosition(robot.motorBratStanga.getCurrentPosition());
                 robot.motorBratDreapta.setTargetPosition(robot.motorBratDreapta.getCurrentPosition());
             }
 
-            telemetry.update();
 
             if(robot.motorBratStanga.getTargetPosition() == -9109)
             {
