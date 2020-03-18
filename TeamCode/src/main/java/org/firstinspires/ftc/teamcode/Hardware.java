@@ -60,18 +60,13 @@ public class Hardware{
     public Servo   prindere=null;
     public Servo   brick = null;
 
-   // public final static double TRAPA_BASE = 0.959;
-
-
+    
     HardwareMap HardMap = null;
-
 
 
     NormalizedColorSensor color_sensor;
 
     DistanceSensor distance_sensor;
-
-
 
 
     public void init(HardwareMap PHP) {
